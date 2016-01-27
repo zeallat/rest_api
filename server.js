@@ -2,7 +2,7 @@ var express = require("express");
 var mysql   = require("mysql");
 var bodyParser  = require("body-parser");
 var md5 = require('MD5');
-var rest = require("./REST.js");
+var rest = require("./rest.js");
 var app  = express();
 
 function REST(){
@@ -14,10 +14,10 @@ REST.prototype.connectMysql = function() {
     var self = this;
     var pool      =    mysql.createPool({
         connectionLimit : 100,
-        host     : 'localhost',
-        user     : 'root',
-        password : '',
-        database : 'restful_api_demo',
+        host     : 'mysql1.cow8tthhqbik.ap-northeast-1.rds.amazonaws.com',
+        user     : 'zeallat',
+        password : 'rmfnrltnf123',
+        database : 'test_db',
         debug    :  false
     });
     pool.getConnection(function(err,connection){
