@@ -20,7 +20,7 @@ REST_ROUTER.prototype.handleRoutes = function(router,connection,md5) {
     		if(err){
     			res.json({"Error" : true, "Message" : "Error during executing query - "+err});
     		} else {
-    			res.json({"Error" : true, "Message" : "Success"});
+    			res.json({"Error" : false, "Message" : "Success"});
     		}
     	});
     });
@@ -34,7 +34,7 @@ REST_ROUTER.prototype.handleRoutes = function(router,connection,md5) {
     		if(err){
     			res.json({"Error" : true, "Message" : "Error during executing query - "+err});
     		} else {
-    			res.json({"Error" : true, "Message" : "Success", "Users" : rows});
+    			res.json({"Error" : false, "Message" : "Success", "Users" : rows});
     		}
     	});
     });
@@ -48,7 +48,7 @@ REST_ROUTER.prototype.handleRoutes = function(router,connection,md5) {
     		if(err){
     			res.json({"Error" : true, "Message" : "Error during executing query - "+err});
     		} else {
-    			res.json({"Error" : true, "Message" : "Success", "Users" : rows});
+    			res.json({"Error" : false, "Message" : "Success", "Users" : rows});
     		}
     	});
     });
@@ -63,7 +63,7 @@ REST_ROUTER.prototype.handleRoutes = function(router,connection,md5) {
     		if(err){
     			res.json({"Error" : true, "Message" : "Error during executing query - "+err});
     		} else {
-    			res.json({"Error" : true, "Message" : "Success"});
+    			res.json({"Error" : false, "Message" : "Success"});
     		}
     	});
     });
@@ -77,7 +77,7 @@ REST_ROUTER.prototype.handleRoutes = function(router,connection,md5) {
     		if(err){
     			res.json({"Error" : true, "Message" : "Error during executing query - "+err});
     		} else {
-    			res.json({"Error" : true, "Message" : "Success"});
+    			res.json({"Error" : false, "Message" : "Success"});
     		}
     	});
     });
